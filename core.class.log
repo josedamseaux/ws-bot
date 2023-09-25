@@ -1,0 +1,215 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '34623737733@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0159A3C92B92335DA1F',
+    participant: undefined
+  },
+  messageTimestamp: 1695663882,
+  pushName: 'José Damseaux',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '34623737733'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7edd763b-dc4e-48cf-a78b-bbc16aab5992',
+  keyword: 'key_0ea4ae1c-5ba4-4f2b-91c5-beea2224dda5',
+  answer: '🙌 Hola bienvenido a La picota 1',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'eeb2f314d797f98a74a6d680f969d1e5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_73a0149b-b51c-4902-bb4e-0523f20db698',
+  keyword: 'ans_7edd763b-dc4e-48cf-a78b-bbc16aab5992',
+  answer: 'te comparto los siguientes links de interes sobre el proyecto\n' +
+    '👉 *doc* para ver la documentación\n' +
+    '👉 *gracias*  para ver la lista de videos\n' +
+    '👉 *discord* unirte al discord',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'dbabfa101b0ecf6bec68a4e19ccb4d8c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '34623737733@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB071E9CDEAD81F98AD2E',
+    participant: undefined
+  },
+  messageTimestamp: 1695664570,
+  pushName: 'José Damseaux',
+  broadcast: false,
+  message: Message {
+    conversation: '*discord*',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '*discord*',
+  from: '34623737733'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_714ced41-08a9-431e-9910-fd03270a8a85',
+  keyword: 'key_5b0960d3-b73d-4502-8e12-468165f7dce8',
+  answer: '🤪 Únete al discord\n' +
+    'https://link.codigoencasa.com/DISCORD\n' +
+    '\n' +
+    '*2* Para siguiente paso.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8b3947e5d53269a45c8ad9557da6b84c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '34623737733@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB00747C41F376E369253',
+    participant: undefined
+  },
+  messageTimestamp: 1695664573,
+  pushName: 'José Damseaux',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '34623737733'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_8ee62f33-09f8-422f-9794-405abb166b18',
+  keyword: 'key_29548c08-2033-4560-842a-6babc03b0f85',
+  answer: '📄 Aquí tenemos el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8b0f680e9f28bf5b465542d14a43bdf5'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '34623737733@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0BD20CFEEDF6A06369D',
+    participant: undefined
+  },
+  messageTimestamp: 1695666373,
+  pushName: 'José Damseaux',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '34623737733'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7edd763b-dc4e-48cf-a78b-bbc16aab5992',
+  keyword: 'key_0ea4ae1c-5ba4-4f2b-91c5-beea2224dda5',
+  answer: '🙌 Hola bienvenido a La picota 1',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'eeb2f314d797f98a74a6d680f969d1e5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_73a0149b-b51c-4902-bb4e-0523f20db698',
+  keyword: 'ans_7edd763b-dc4e-48cf-a78b-bbc16aab5992',
+  answer: 'te comparto los siguientes links de interes sobre el proyecto\n' +
+    '👉 *doc* para ver la documentación\n' +
+    '👉 *gracias*  para ver la lista de videos\n' +
+    '👉 *discord* unirte al discord',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'dbabfa101b0ecf6bec68a4e19ccb4d8c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '34623737733@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B5E95A743E97CA6840',
+    participant: undefined
+  },
+  messageTimestamp: 1695666377,
+  pushName: 'José Damseaux',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola como estas',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola como estas',
+  from: '34623737733'
+}
