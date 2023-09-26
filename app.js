@@ -4,67 +4,59 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
+const flowSecundario = addKeyword(['siguiente', 'bien']).addAnswer([''])
 
-const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
+const flow2 = addKeyword(['2', 'atender', 'cliente']).addAnswer(
     [
-        '📄 Aquí encontras las documentación recuerda que puedes mejorarla',
-        'https://bot-whatsapp.netlify.app/',
-        '\n*2* Para siguiente paso.',
+        '🙌 En breve te atenderemos',
     ],
     null,
     null,
     [flowSecundario]
 )
 
-const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
+const flow1 = addKeyword(['menu', '1']).addAnswer(
     [
-        '🙌 Aquí encontras un ejemplo rapido',
-        'https://bot-whatsapp.netlify.app/docs/example/',
-        '\n*2* Para siguiente paso.',
+        '📄 Aquí está nuestro menú',
+        'https://lapicota.netlify.app/assets/menujpg.png',
     ],
     null,
     null,
-    [flowSecundario]
+    [flow2, flowSecundario]
 )
 
-const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+
+
+const flowGracias = addKeyword(['gracias', 'grac', 'grax']).addAnswer(
     [
-        '🚀 Puedes aportar tu granito de arena a este proyecto',
-        '[*opencollective*] https://opencollective.com/bot-whatsapp',
-        '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-        '[*patreon*] https://www.patreon.com/leifermendez',
-        '\n*2* Para siguiente paso.',
+        '¿Algo más en lo que podamos servirte?',
+
+        // '\n*2* Para siguiente paso.',
     ],
     null,
     null,
-    [flowSecundario]
+    [flowSecundario, flow1]
 )
 
-const flowDiscord = addKeyword(['discord']).addAnswer(
-    ['🤪 Únete al discord', 'https://link.codigoencasa.com/DISCORD', '\n*2* Para siguiente paso.'],
-    null,
-    null,
-    [flowSecundario]
-)
-
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('¡Hola! Gracias por comunicarte con La picota 1')
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo', 'Hola', 'Ola','buenas', 'buen dia'])
+    .addAnswer('Gracias por comunicarte con La Picota 1')
     .addAnswer(
         [
-            '👉 *1* para ver nuestra carta',
-            '👉 *2*  para ver nuestro menu del dia',
-            '👉 *3* para hablar directamente con nosotros',
+            'Envía *1* para ver nuestra carta',
+            'Envía *2* para atenderte',
+            '🕑Estamos abiertos de lunes a viernes de 7am a 11pm. Sábados hasta las 4pm',
+            '🖼️Domingos descansamos',
+
         ],
         null,
         null,
-        [flowDocs, flowGracias, flowTuto, flowDiscord]
+        [flow1, flow2 ,flowGracias]
     )
 
 const main = async () => {
-    const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([flowPrincipal])
     const adapterProvider = createProvider(BaileysProvider)
+    const adapterDB = new MockAdapter()
 
     createBot({
         flow: adapterFlow,
